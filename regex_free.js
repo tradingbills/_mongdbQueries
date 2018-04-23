@@ -1,0 +1,1 @@
+db.intercomSegments.find({"name":{ $regex : /^free/, '$options' : 'i'}})

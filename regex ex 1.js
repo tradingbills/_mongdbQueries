@@ -1,0 +1,1 @@
+db.getCollection('19618').find({"url":{ $regex : /faq/, '$options' : 'i'}})
