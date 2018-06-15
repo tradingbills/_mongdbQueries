@@ -11,8 +11,10 @@ var queryDoc= {}
 var     paid = "59deb60085a3c22795133b02"
 var     free = "59dfe40a0a5037ff1c0bd8af"
 var useSegId = free
+var useRegId = "US/Canada Region"
 
-queryDoc= {"last_request_at": dateRange, "segments.segments.id":useSegId} 
+queryDoc= {"last_request_at": dateRange, "segments.segments.id":useSegId, "custom_attributes.api_region_name": useRegId} 
+
 queryDoc
 db.getCollection(`${collName}`)
 .aggregate([ 
@@ -30,6 +32,8 @@ db.getCollection(`${collName}`)
 //                 "Plan Names": "$Plan Names",
 //                 "Client id" : "$client_id"
 //          }
+    
+  
 //       }
    ]
  )
