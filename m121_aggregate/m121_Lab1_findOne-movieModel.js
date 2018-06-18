@@ -1,5 +1,6 @@
-MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.movies.findOne();
-{
+// MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.movies.findOne();
+// see connection notes in Chap1_Lab1.js
+var oneMovie = {
         "_id" : ObjectId("573a1390f29313caabcd4cf1"),
         "title" : "Ingeborg Holm",
         "year" : 1913,
