@@ -25,8 +25,10 @@
  }, {
    $project: {
      "ENDPOINT:": "$path",
-     method: "$method.k",
-     operationId: "$method.v.operationId"
+     "method": "$method.k",
+     "tags": "$method.v.tags",
+     "summary": "$method.v.summary",
+     "operationId": "$method.v.operationId"
    }
  }, {
    $sort: {
@@ -34,5 +36,5 @@
      operationId: 1
    }
  }, {
-   $out: "subset"
+   $out: "subset01"
  }])
