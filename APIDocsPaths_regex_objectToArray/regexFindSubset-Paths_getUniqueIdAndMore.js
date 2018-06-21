@@ -6,16 +6,15 @@ db.getCollection('subset01').aggregate([{
                         '$options': 'i'
                     }
                 }
- 
-                                  ,{
-                                      "method": "patch"
-                                 }
+                ,{
+                    "method": "patch"
+                }
             ]
         }
     },
     {
         $addFields: {
-//             "_id": 0,
+            //             "_id": 0,
             "actualMethodUsed": "",
             "actualURL": "",
             "description": "",
