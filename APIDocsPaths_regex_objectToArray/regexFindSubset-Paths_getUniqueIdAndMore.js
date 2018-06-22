@@ -1,25 +1,11 @@
-db.getCollection('subset01').aggregate([{
+db.getCollection('subset02').aggregate([{
         $match: {
-            $and: [{
-                    "ENDPOINT:": {
-                        $regex: /\/Contact\/{[a-zA-Z{}]+?\b/,
-                        '$options': 'i'
-                    }
-                }
-                ,{
-                    "method": "patch"
-                }
-            ]
-        }
-    },
-    {
-        $addFields: {
-            //             "_id": 0,
-            "actualMethodUsed": "",
-            "actualURL": "",
-            "description": "",
-            "docsURL": "",
-            "questons": [""]
+            "path": {
+                $regex: /Contact/,
+                '$options': 'i'
+            }
+            ,
+            "method": "patch"
         }
     }
 ])
