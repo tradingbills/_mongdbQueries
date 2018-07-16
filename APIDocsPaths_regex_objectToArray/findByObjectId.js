@@ -1,0 +1,1 @@
+db.getCollection('subset02').find({"_id" : ObjectId("5b2d17a95fc8779ec37a8d07")})
