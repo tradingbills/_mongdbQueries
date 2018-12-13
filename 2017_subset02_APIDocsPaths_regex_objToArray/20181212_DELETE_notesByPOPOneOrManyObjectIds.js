@@ -1,7 +1,7 @@
-/* 
+/*
 // for editing multiple docs with same notes, put ids in string delimited by a comma
 // read above , csv, map, compilation = 
-*/
+*/
 //var myStr="5b2d17a95fc8779ec37a8d39, 5b2d17a95fc8779ec37a8d40, 5b2d17a95fc8779ec37a8d34"
  var myStr = ""  //read above, string can have many
 var myArr=myStr.split(",") //trim in query string
